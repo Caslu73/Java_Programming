@@ -56,6 +56,35 @@ public class CydeoDevStudent extends Person {
         }
         this.batchNumber = batchNumber;
     }
+
+
+    @Override
+    public void eat() {
+        System.out.println(getName()+ " is eating "+programmingLanguage);
+    }
+
+    @Override
+    public void drink() {
+        System.out.println(getName()+ " is drinking "+programmingLanguage);
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println(getName()+ " does not need to sleep");
+    }
+
+    @Override
+    public String toString() {
+        return "CydeoDevStudent{" +
+                "name='" + getName() + '\'' +
+                ", gender=" + getGender() +
+                ", age=" + getAge() +
+                ", dateOfBirth=" + getDateOfBirth() +
+                "id='" + id + '\'' +
+                ", batchName='" + batchName + '\'' +
+                ", batchNumber=" + batchNumber +
+                '}';
+    }
 }
 /*
 . Create a sub class of Person (from day32 package) named CydeoDevStudent (final)
