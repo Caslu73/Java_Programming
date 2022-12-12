@@ -9,7 +9,7 @@ public class Tesla extends Car{
         super(model, color, year, price);
     }
 
-    public void autoPilot(){
+    public final void autoPilot(){
         System.out.println(getMake()+ " "+getModel()+ " is in self-driving mode");
     }
 
