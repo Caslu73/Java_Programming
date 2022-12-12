@@ -43,7 +43,7 @@ public class CydeoDevStudent extends Person {
         if(batchName.equalsIgnoreCase("zero to hero") || batchName.equalsIgnoreCase("alumni dev")){
             this.batchName = batchName;
         }else{
-            System.err.println("Invalid batch name: "+batchName +" \n No such a batch in Cydeo");
+            System.err.println("Invalid batch name: "+batchName +"\nNo such a batch at Cydeo");
             System.exit(1);
         }
 
@@ -51,7 +51,7 @@ public class CydeoDevStudent extends Person {
 
     public void setBatchNumber(int batchNumber) {
         if(batchNumber <= 0){
-            System.err.println("Invalid batch number: "+batchNumber+"\n batch number can not be negative or zero");
+            System.err.println("Invalid batch number: "+batchNumber+"\nBatch number can not be negative or zero");
             System.exit(1);
         }
         this.batchNumber = batchNumber;
@@ -80,7 +80,7 @@ public class CydeoDevStudent extends Person {
                 ", gender=" + getGender() +
                 ", age=" + getAge() +
                 ", dateOfBirth=" + getDateOfBirth() +
-                "id='" + id + '\'' +
+                ", id='" + id + '\'' +
                 ", batchName='" + batchName + '\'' +
                 ", batchNumber=" + batchNumber +
                 '}';
