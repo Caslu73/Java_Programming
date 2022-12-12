@@ -14,7 +14,7 @@ public class Person {
         numberOfHead = 1;
     }
 
-    public Person(String name, char gender, int age, LocalDate dateOfBirth) {
+    public Person(String name, char gender,LocalDate dateOfBirth) {
         setName(name);
 
         if(!(gender == 'M' || gender=='F')){
@@ -23,11 +23,7 @@ public class Person {
         }
         this.gender = gender;
 
-        if (age <= 0){
-            System.err.println("Invalid age: "+age);
-            System.exit(1);
-        }
-        this.age = age;
+        this.age = LocalDate.now().getYear() - dateOfBirth.getYear();
         this.dateOfBirth = dateOfBirth;
     }
 
